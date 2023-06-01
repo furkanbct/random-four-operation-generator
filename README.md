@@ -1,6 +1,6 @@
 # Unity Random Four Operation Generator
-![Repo Size](https://img.shields.io/github/repo-size/furkanbct/5simGetCheapestCountries)
-![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/furkanbct/5simGetCheapestCountries&title=Views)
+![Repo Size](https://img.shields.io/github/repo-size/furkanbct/unity-random-four-operation-generator)
+![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/furkanbct/unity-random-four-operation-generator&title=Views)
 ## About
 This code generates random operation and 3 wrong options suitable to operation based on the difficulty and game mode you give
 ## Usage
