@@ -6,7 +6,7 @@ public class OperationManager : MonoBehaviour
 {
     public enum Mode
     {
-        Addiction = 0,
+        Addition = 0,
         Subtraction = 1,
         Multiplication = 2,
         Division = 3
@@ -38,7 +38,7 @@ public class OperationManager : MonoBehaviour
 
         switch (gameMode)
         {
-            case Mode.Addiction:
+            case Mode.Addition:
                 num1 = operandA;
                 num2 = operandB;
 
