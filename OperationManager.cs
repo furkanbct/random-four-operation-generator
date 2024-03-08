@@ -29,14 +29,14 @@ public class OperationManager : MonoBehaviour
         Question question = new ();
         Operation operation = new();
         List<int> answers = new();
-        Mode gameMode = _modes[Random.Range(0, _modes.Length)]; // Select a game mode
+        Mode operationMode = _modes[Random.Range(0, _modes.Length)]; // Select a game mode
 
         int num1, num2;
 
         int operandA = GetRandomOperand(_difficulty); // Generate the first operand
         int operandB = GetRandomOperand(_difficulty); // Generate the second operand
 
-        switch (gameMode)
+        switch (operationMode)
         {
             case Mode.Addition:
                 num1 = operandA;
@@ -83,6 +83,7 @@ public class OperationManager : MonoBehaviour
         }
 
         answers.Add(operation.Answer); // Add the correct answer to the answers list
+        //Calculate incorrect answers
         while (answers.Count < 4)
         {
             int randomRatio = Random.Range(0, 2);
@@ -108,7 +109,7 @@ public class OperationManager : MonoBehaviour
     private static int GetRandomOperand(int _difficulty)
     {
         int operand = Mathf.FloorToInt(Random.value * _difficulty);
-        while (operand <= 0)
+        while (operand <= 0)//Protection against 0 when difficulty value is in small range.
         {
             operand = Mathf.FloorToInt(Random.value * _difficulty);
         }
